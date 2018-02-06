@@ -1,0 +1,5 @@
+<div *ngIf="notFound" class="algcenter">{{textNotFound}}</div>
+<div *ngIf="error" class="algcenter">{{textError}}<span (click)="loadData()" class="pointer"> Попробуйте еще раз</span></div>
+
+<div *ngIf="loading" class="loader center"></div>
+<ng-content *ngIf="!notFound && !loading && !error"></ng-content>

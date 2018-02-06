@@ -1,0 +1,14 @@
+<div class="container">
+  <h3>Sws-loading:</h3>
+
+  <button (click)="refresh()">Refresh</button>
+  <button (click)="getError()">Get error</button>
+  <button (click)="getNull()">Get not found</button>
+
+  <sws-loading [dataObservable]="users$" [download]="users$" (dataOut)="setUsers($event)">
+    <div *ngFor="let user of users">
+      <div>{{user.name}}</div>
+    </div>
+  </sws-loading>
+
+</div>

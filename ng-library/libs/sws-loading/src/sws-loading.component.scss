@@ -1,0 +1,36 @@
+.pane{
+  padding: 1em;
+}
+.hidden {
+  visibility: hidden;
+}
+.loading {
+  opacity: 0.5
+}
+.algcenter {
+  text-align: center;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #006f25; /* Blue */
+  border-radius: 50%;
+  width: 70px;
+  height: 70px;
+  animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+.pointer {
+  cursor: pointer;
+  color:#FF8F3A
+}

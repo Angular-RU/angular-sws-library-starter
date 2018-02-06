@@ -1,0 +1,19 @@
+{
+  "name": "sws-loading",
+  "version": "1.0.0",
+  "author": "Alexander <taitonproject@gmail.com>",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/core": "^5.2.0",
+    "@angular/common": "^5.2.0",
+    "rxjs": "^5.5.2"
+  },
+  "ngPackage": {
+    "$schema": "./node_modules/ng-packagr/ng-package.schema.json",
+    "dest": "../dist/sws-loading",
+    "workingDirectory": "../.ng_build",
+    "lib": {
+      "entryFile": "src/public_api.ts"
+    }
+  }
+}
